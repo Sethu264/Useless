@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Funny Converter</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 min-h-screen flex items-center justify-center">
+  <div class="bg-yellow-50 rounded-3xl shadow-lg p-8 w-full max-w-md">
+    <h1 class="text-3xl font-bold text-pink-500 mb-2 font-mono">Funny Converter</h1>
+    <p class="mb-6 text-gray-600">Convert boring units into hilarious equivalents!</p>
+    <input
+      type="number"
+      id="inputValue"
+      placeholder="Enter a number"
+      class="w-full mb-4 p-3 border-2 border-pink-200 rounded-lg focus:ring-2 focus:ring-pink-400 focus:outline-none text-lg"
+    >
+    <select
+      id="unitType"
+      class="w-full mb-4 p-3 border-2 border-yellow-200 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none text-lg"
+    >
+      <option value="meters">Meters</option>
+      <option value="kilograms">Kilograms</option>
+      <option value="liters">Liters</option>
+    </select>
+    <button
+      onclick="convert()"
+      class="w-full py-3 bg-pink-400 text-white font-semibold rounded-xl hover:bg-pink-500 transition mb-4 text-lg"
+    >
+      Convert!
+    </button>
+    <div
+      id="result"
+      class="min-h-16 text-center text-lg mt-2 text-yellow-700 font-mono"
+    ></div>
+  </div>
+  <script>
+    const conversions = {
+      meters: [
+        { name: 'bananas', factor: 0.18, joke: 'That’s how many bananas end-to-end!' },
+        { name: 'grand pianos', factor: 2, joke: 'Stacked grand pianos, very musical!' }
+      ],
+      kilograms: [
+        { name: 'house cats', factor: 4.5, joke: 'That’s a lot of meows!' },
+        { name: 'cheeseburgers', factor: 0.17, joke: 'A delicious way to weigh things!' }
+      ],
+      liters: [
+        { name: 'bathtubs', factor: 180, joke: 'Time for a super soaker party!' },
+        { name: 'coffee cups', factor: 0.24, joke: 'Caffeinate the world!' }
+      ]
+    };
+
+    function convert() {
+      const value = Number(document.getElementById('inputValue').value);
+      const unit = document.getElementById('unitType').value;
+      const resultDiv = document.getElementById('result');
+      
+      if (!value) {
+        resultDiv.innerHTML = '<span class="text-red-500">Enter a number, please!</span>';
+        return;
+      }
+
+      // Pick a random funny unit for the chosen type
+      const options = conversions[unit];
+      const choice = options[Math.floor(Math.random() * options.length)];
+
+      const funnyValue = (value / choice.factor).toFixed(2);
+      resultDiv.innerHTML = 
+        `<b class="text-2xl">${value}</b> <span class="capitalize">${unit}</span> is <b class="text-2xl">${funnyValue}</b> <span class="font-semibold">${choice.name}</span>!<br><small class="block mt-2 italic text-pink-600">${choice.joke}</small>`;
+    }
+  </script>
+</body>
+</html>
