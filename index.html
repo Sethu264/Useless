@@ -155,6 +155,8 @@
         { name: 'pencils', factor: 0.19, joke: 'Write your way across!' },
         { name: 'shoes', factor: 0.26, joke: 'Step by step!' },
         { name: 'sausages', factor: 0.13, joke: 'Sausage links for distance!' },
+        { name: 'coconut tree', factor: 20, joke: 'That’s how many coconut trees tall!' }, // 20 meters
+        { name: 'ammachis saree', factor: 5.5, joke: 'That’s how many Ammachi\'s sarees long!' }, // 5.5 meters
         { name: 'Sayanth', factor: 1.7, joke: 'That’s how many Sayanths tall!' }, // 170cm = 1.7m
         { name: 'Sethu', factor: 1.73, joke: 'That’s how many Sethus tall!' }    // 173cm = 1.73m
       ],
@@ -167,6 +169,8 @@
         { name: 'pineapples', factor: 1.2, joke: 'Tropical mass!' },
         { name: 'books', factor: 0.4, joke: 'Read your way to weight!' },
         { name: 'hamsters', factor: 0.12, joke: 'Tiny but mighty!' },
+        { name: 'coconut', factor: 1.8, joke: 'That’s how many coconuts!' },
+        { name: 'uruli', factor: 8, joke: 'That’s how many urulis!' },
         { name: 'Sayanth', factor: 60, joke: 'That’s how many Sayanths!' },
         { name: 'Sethu', factor: 80, joke: 'That’s how many Sethus!' }
       ],
@@ -201,7 +205,6 @@
         resultDiv.innerHTML = '<span style="color:#c9184a;">Enter a number, please!</span>';
         return;
       }
-
       const choice = conversions[unit][uselessUnitIdx];
 
       const funnyValue = (value / choice.factor).toFixed(2);
