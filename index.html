@@ -88,6 +88,26 @@
     <polygon points="50,10 90,90 10,90" fill="#4a4e69" stroke="#f2e9e4" stroke-width="5"/>
     <text x="50%" y="70%" text-anchor="middle" fill="#f2e9e4" font-size="24" font-family="Press Start 2P" dy=".3em">♫</text>
   </svg>
+  <!-- Cat SVG Doodle -->
+  <svg class="doodle doodle2 right-[10vw] top-[10vh] w-24 h-24" viewBox="0 0 100 100">
+    <ellipse cx="50" cy="70" rx="30" ry="18" fill="#f2e9e4" stroke="#22223b" stroke-width="4"/>
+    <circle cx="50" cy="50" r="20" fill="#f2e9e4" stroke="#22223b" stroke-width="4"/>
+    <polygon points="35,35 30,15 45,30" fill="#f2e9e4" stroke="#22223b" stroke-width="3"/>
+    <polygon points="65,35 70,15 55,30" fill="#f2e9e4" stroke="#22223b" stroke-width="3"/>
+    <circle cx="43" cy="50" r="3" fill="#22223b"/>
+    <circle cx="57" cy="50" r="3" fill="#22223b"/>
+    <ellipse cx="50" cy="60" rx="6" ry="3" fill="#22223b"/>
+  </svg>
+  <!-- Hamster SVG Doodle -->
+  <svg class="doodle doodle3 left-[10vw] bottom-[10vh] w-20 h-20" viewBox="0 0 100 100">
+    <ellipse cx="50" cy="60" rx="22" ry="16" fill="#c9ada7" stroke="#22223b" stroke-width="3"/>
+    <circle cx="50" cy="45" r="14" fill="#c9ada7" stroke="#22223b" stroke-width="3"/>
+    <circle cx="42" cy="43" r="2.5" fill="#22223b"/>
+    <circle cx="58" cy="43" r="2.5" fill="#22223b"/>
+    <ellipse cx="50" cy="52" rx="4" ry="2" fill="#22223b"/>
+    <ellipse cx="38" cy="32" rx="4" ry="4" fill="#c9ada7" stroke="#22223b" stroke-width="2"/>
+    <ellipse cx="62" cy="32" rx="4" ry="4" fill="#c9ada7" stroke="#22223b" stroke-width="2"/>
+  </svg>
   <!-- Main Card -->
   <div class="retro-card p-8 w-full max-w-md mx-auto relative">
     <h1 class="text-3xl font-bold text-[#22223b] mb-2 drop-shadow-lg" style="font-family: 'Press Start 2P', cursive;">USELESS CONVERTER</h1>
@@ -129,49 +149,33 @@
     const conversions = {
       meters: [
         { name: 'bananas', factor: 0.18, joke: 'That’s how many bananas end-to-end!' },
-        { name: 'grand pianos', factor: 2, joke: 'Stacked grand pianos, very musical!' },
         { name: 'cats', factor: 0.46, joke: 'That’s how many cats in length!' },
         { name: 'toothbrushes', factor: 0.15, joke: 'Brush up on your measurements!' },
-        { name: 'hotdogs', factor: 0.15, joke: 'A tasty way to measure distance!' },
         { name: 'giraffes', factor: 5.5, joke: 'Tall order for a measurement!' },
         { name: 'pencils', factor: 0.19, joke: 'Write your way across!' },
         { name: 'shoes', factor: 0.26, joke: 'Step by step!' },
-        { name: 'bowling pins', factor: 0.38, joke: 'Strike out your length!' },
-        { name: 'garden gnomes', factor: 0.3, joke: 'Magical measurements!' },
         { name: 'sausages', factor: 0.13, joke: 'Sausage links for distance!' },
-        { name: 'lego bricks', factor: 0.008, joke: 'Stack those bricks!' },
         { name: 'Sayanth', factor: 1.7, joke: 'That’s how many Sayanths tall!' }, // 170cm = 1.7m
         { name: 'Sethu', factor: 1.73, joke: 'That’s how many Sethus tall!' }    // 173cm = 1.73m
       ],
       kilograms: [
         { name: 'house cats', factor: 4.5, joke: 'That’s a lot of meows!' },
         { name: 'cheeseburgers', factor: 0.17, joke: 'A delicious way to weigh things!' },
-        { name: 'bowling balls', factor: 6.8, joke: 'Roll with it!' },
         { name: 'watermelons', factor: 5, joke: 'Juicy weights!' },
-        { name: 'rubber ducks', factor: 0.045, joke: 'Quack up your mass!' },
-        { name: 'toasters', factor: 1.5, joke: 'Toast your weight!' },
         { name: 'basketballs', factor: 0.62, joke: 'Bounce your mass!' },
         { name: 'laptops', factor: 2.2, joke: 'Techy weights!' },
         { name: 'pineapples', factor: 1.2, joke: 'Tropical mass!' },
         { name: 'books', factor: 0.4, joke: 'Read your way to weight!' },
-        { name: 'gold bars', factor: 12.4, joke: 'Heavy treasure!' },
         { name: 'hamsters', factor: 0.12, joke: 'Tiny but mighty!' },
         { name: 'Sayanth', factor: 60, joke: 'That’s how many Sayanths!' },
         { name: 'Sethu', factor: 80, joke: 'That’s how many Sethus!' }
       ],
       liters: [
-        { name: 'bathtubs', factor: 180, joke: 'Time for a super soaker party!' },
-        { name: 'coffee cups', factor: 0.24, joke: 'Caffeinate the world!' },
         { name: 'water bottles', factor: 0.5, joke: 'Stay hydrated!' },
         { name: 'teapots', factor: 1.2, joke: 'Brew up some volume!' },
-        { name: 'paint cans', factor: 3.8, joke: 'Colorful conversions!' },
-        { name: 'milk cartons', factor: 1, joke: 'Got milk?' },
-        { name: 'fish tanks', factor: 40, joke: 'Aquatic measurements!' },
         { name: 'soda cans', factor: 0.33, joke: 'Fizz up your liters!' },
         { name: 'wine bottles', factor: 0.75, joke: 'Cheers to volume!' },
-        { name: 'ice cream tubs', factor: 2, joke: 'Sweet measurements!' },
-        { name: 'bucket hats', factor: 0.5, joke: 'Hatful of liters!' },
-        { name: 'flower vases', factor: 0.8, joke: 'Blooming volumes!' }
+        { name: 'ice cream tubs', factor: 2, joke: 'Sweet measurements!' }
       ]
     };
 
