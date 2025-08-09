@@ -52,14 +52,11 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1918" height="872" alt="Screenshot 2025-08-09 065924" src="https://github.com/user-attachments/assets/37129ca3-952c-4b07-af34-2cb8dfba8031" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1919" height="866" alt="Screenshot 2025-08-09 070237" src="https://github.com/user-attachments/assets/e5fdbe6e-bb87-4fc6-8469-cab8a0c50860" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1919" height="865" alt="Screenshot 2025-08-09 070323" src="https://github.com/user-attachments/assets/bb3224aa-0d99-4d35-8997-4b940ffdb647" />
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -102,5 +99,6 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+
 
 
