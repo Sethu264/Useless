@@ -19,7 +19,7 @@ it is a useless unit converted it takes a input in standard units and converts i
 ### The Problem (that doesn't exist)
 there didnt exist a solution to see how many cats can make up 10 meters
 ### The Solution (that nobody asked for)
-[found the average length of a cat and multiplied it my the input]
+[found the average length of a cat and multiplied it with the input]
 
 ## Technical Details
 ### Technologies/Components Used
@@ -99,6 +99,7 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+
 
 
 
